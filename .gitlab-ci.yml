@@ -22,9 +22,10 @@ production:
   stage: deploy
   script:
   - apk update
-  - apk add rubygems ruby-dev 
+  - apk upgrade
+  - apk add bash curl-dev ruby-dev  ruby ruby-bundler build-base libffi-dev ruby-irb ruby-rdoc git curl
   - gem install dpl
-  - dpl --provider=heroku --app=simplybook-dashboard --api-key=$HEROKU_PRODUCTION_API_KEY # saved in CI/CD Pipelines -> secret variables
+  - dpl --provider=heroku --app=simplybook-frontend --api-key=$HEROKU_PRODUCTION_API_KEY # saved in CI/CD Pipelines -> secret variables
   when: manual
 #  only:
 #  - master
