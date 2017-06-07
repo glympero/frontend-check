@@ -198,7 +198,7 @@ h6 {
 
 .intro-message > h1 {
     margin: 0;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+    text-shadow: 3px 3px 10px rgba(0,0,0,1);
     font-size: 5em;
 }
 
@@ -209,7 +209,7 @@ h6 {
 }
 
 .intro-message > h3 {
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.6) !important;
+    text-shadow: 3px 3px 10px rgba(0,0,0,1) !important;
 }
 
 @media(max-width:767px) {
@@ -219,6 +219,7 @@ h6 {
 
     .intro-message > h1 {
         font-size: 3em;
+
     }
 
     ul.intro-social-buttons > li {
@@ -666,4 +667,9 @@ p.copyright {
 	top: 0;
 	left: 0;
 	background: rgba(0,0,0,.3);
+}
+
+.help-page {
+	width: 25%;
+	margin: 0 auto;
 }

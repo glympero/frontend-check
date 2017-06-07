@@ -32,67 +32,77 @@
 
 
 /* 1 column: 320px */
-.autowide {
+.about-page .autowide .about-image-2 {
     margin-left: 0%;
     width: 100%;
 }
-.autowide img {
+.about-page .autowide img {
     float: left;
     margin: 0 0 0 0;
     border-radius: 50%;
 }
-.autowide .module {
-    background-color: #f8f8f8;
+.about-page .autowide .module {
+    background-color: #f8f8f8 !important;
     border-radius: 0rem;
     margin-bottom: 1rem;
 }
-.autowide .module p {
+.about-page .autowide .module p {
     padding: 1rem 1rem;
+
 }
 
 /* 2 columns: 600px */
 @media only screen and (min-width: 600px) {
-    .autowide {
+    .about-image-2 {
+        padding-bottom: 35%;
+    }
+    .about-page .autowide {
         height:40%;
     }
-    .autowide .module {
+    .about-page .autowide .module {
         float: left;
         margin-right: 0;
         width: 48.717948717948715%;
     }
-    .autowide .module:nth-child(2n+0) {
+    .about-page .autowide .module:nth-child(2n+0) {
         margin-right: 0;
     }
 }
 
 /* 3 columns: 768px */
 @media only screen and (min-width: 768px) {
-    .autowide {
+    .about-image-2 {
+        padding-bottom: 30%;
+    }
+    .about-page .autowide {
         height:30%;
     }
-    .autowide .module {
+    .about-page .autowide .module {
         width: 31.623931623931625%;
     }
-    .autowide .module:nth-child(2n+0) {
+    .about-page .autowide .module:nth-child(2n+0) {
         margin-right: 0;
     }
-    .autowide .module:nth-child(3n+0) {
+    .about-page .autowide .module:nth-child(3n+0) {
         margin-right: 0;
     }
 }
 
 /* 4 columns: 992px and up */
 @media only screen and (min-width: 992px) {
-    .autowide {
+    .about-image-2 {
+        padding-bottom: 13%;
+    }
+    .about-page .autowide {
         height:20%;
     }
-    .autowide .module {
+    .about-page .autowide .module {
         width: 23.076923076923077%;
     }
-    .autowide .module:nth-child(3n+0) {
+    .about-page .autowide .module:nth-child(3n+0) {
         margin-right: 0;
     }
-    .autowide .module:nth-child(4n+0) {
+    .about-page .autowide .module:nth-child(4n+0) {
         margin-right: 0;
     }
 }

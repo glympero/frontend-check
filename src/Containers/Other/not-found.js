@@ -10,9 +10,7 @@ export default class NotFound extends Component {
         <div className='not-found-text'>
           <span>404.</span>
           <br />
-          <span>Congratulations !</span>
-          <br />
-          <span>You broke the thing.</span>
+          <span>This page doesn't exist.</span>
         </div>
       </div>
     )

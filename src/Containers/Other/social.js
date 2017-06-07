@@ -8,10 +8,10 @@ export default class Social extends Component {
         <div id="contact" className="banner">
           <div className="container">
               <div className="row">
-                  <div className="col-lg-6">
+                  <div className="col-lg-4">
                       <h2>Connect to SimplyBook:</h2>
                   </div>
-                  <div className="col-lg-6">
+                  <div className="col-lg-8">
                       <ul className="list-inline banner-social-buttons">
                           <li>
                               <a href="https://twitter.com/simplybookgr" className="btn btn-default btn-lg" target="_blank" rel="noopener noreferrer"><i className="fa fa-twitter fa-fw" /><span className="network-name">Twitter</span></a>
@@ -21,6 +21,9 @@ export default class Social extends Component {
                           </li>
                           <li>
                               <a href="https://www.instagram.com/simplybook.gr/" className="btn btn-default btn-lg" target="_blank" rel="noopener noreferrer"><i className="fa fa-instagram fa-fw" /> <span className="network-name">Instagram</span></a>
+                          </li>
+                          <li>
+                              <a href="mailto:info@simplybook.gr?Subject=Hello%Simplybook/" className="btn btn-default btn-lg" target="_blank" rel="noopener noreferrer"><i className="fa fa-envelope fa-fw" /> <span className="network-name">Email</span></a>
                           </li>
                       </ul>
                   </div>

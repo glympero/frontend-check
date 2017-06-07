@@ -93,7 +93,7 @@ export default class TitleHeader extends Component {
                       </Link>
                     </div>
                     <div className="intro-message">
-                      <h1>SimplyBook</h1>
+                      <h1>Simplybook</h1>
                       <h3>Supporting small and medium local car rental companies</h3>
                       <hr className="intro-divider" />
                       {this.getDestinationPage()}
