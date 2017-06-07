@@ -8,8 +8,9 @@ export default class Social extends Component {
         <div id="contact" className="banner">
           <div className="container">
               <div className="row">
+
                   <div className="col-lg-4">
-                      <h2>Connect to SimplyBook:</h2>
+                      <h2>Follow Simplybook</h2>
                   </div>
                   <div className="col-lg-8">
                       <ul className="list-inline banner-social-buttons">

@@ -33,7 +33,7 @@ export default class Footer extends Component {
                           </li>
                           <li><a onClick={this.animateAndScrollToTop} id="return-to-top"> <i className="fa fa-arrow-up" aria-hidden="true" /></a></li>
                       </ul>
-                      <p className="copyright text-muted small">Copyright SimplyBook {new Date().getFullYear()}. All Rights Reserved</p>
+                      <p className="copyright text-muted small">Copyright Simplybook {new Date().getFullYear()}. All Rights Reserved</p>
                   </div>
               </div>
 
