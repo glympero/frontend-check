@@ -44,28 +44,33 @@ export default class Header extends Component {
                         <Link id="header_id" className="navbar-brand headerItem logo" to="/"><img
                             src={ this.state.logo } alt="Rent a car with Simplybook" id="image-logo"/>
                             <span className="nav-logo">
-                            <Label>Simplybook</Label>
+                            Simplybook
                             </span>
                         </Link>
                     </div>
                     <div className="collapse navbar-collapse" id="myNavbar">
                         <ul className="nav navbar-nav">
-                            <li>
-                                <Link className={location.pathname === "/car-rentals" ? "selected" : ""}
-                                      to="/car-rentals">
-                                    <Label>Car rentals</Label>
-                                </Link>
-                            </li>
+
                         </ul>
                         <ul className="nav navbar-nav  navbar-right">
                             <li>
-                                <Link className={location.pathname === "/about" ? "selected" : ""} to="/about">
-                                    <Label>About Us</Label>
+                                <Link to="/">
+                                    <Label className={location.pathname === "/" ? "selected" : ""}>Home</Label>
                                 </Link>
                             </li>
                             <li>
-                                <Link className={location.pathname === "/help" ? "selected" : ""} to="/help">
-                                    <Label>Help</Label>
+                                <Link to="/car-rentals">
+                                    <Label className={location.pathname === "/car-rentals" ? "selected" : ""}>Car rentals</Label>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/about">
+                                    <Label className={location.pathname === "/about" ? "selected" : ""}>About Us</Label>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/help">
+                                    <Label className={location.pathname === "/help" ? "selected" : ""}>Help</Label>
                                 </Link>
                             </li>
                         </ul>

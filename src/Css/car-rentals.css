@@ -88,6 +88,20 @@
     }
 }
 
+@media only screen and (max-width: 768px) {
+    .label {
+        padding-right: 120% !important;
+        border-radius: 0 !important;
+        margin-left: -15px !important;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .headerwell{
+        width: 75% !important;
+    }
+}
+
 /* 4 columns: 992px and up */
 @media only screen and (min-width: 992px) {
     .about-image-2 {
@@ -109,4 +123,25 @@
 
 .headerwell{
     background-color: rgba(0,0,0,0.3);
+    margin: 0 auto;
+    width:65%;
+    border-radius: 20px;
+}
+
+.label-default {
+    background-color: #757575;
+}
+
+.label-default:hover {
+    background-color: #212121;
+}
+
+.label {
+    padding: 10px;
+    font-size:85%;
+    border-radius: .55em;
+}
+
+.label.selected {
+    background-color: #212121;
 }

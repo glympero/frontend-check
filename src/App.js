@@ -21,10 +21,16 @@ WebFont.load({
   }
 });
 
+const ScrollToTop = () => {
+  window.scrollTo(0, 0);
+  return null;
+};
+
 const App = () => (
     <main>
       <BrowserRouter>
         <div className='main' id="header">
+          <Route component={ScrollToTop} />
           <Header />
           <Switch>
             <Route exact path='/' component={HomePage}/>
