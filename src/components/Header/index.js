@@ -70,6 +70,11 @@ export default class Header extends Component {
                           </Link>
                       </li>
                       <li>
+                        <Link to="/car-search">
+                          <Label className={location.pathname === "/car-search" ? "selected" : ""}>Car search</Label>
+                        </Link>
+                      </li>
+                      <li>
                           <Link to="/about">
                               <Label className={location.pathname === "/about" ? "selected" : ""}>About Us</Label>
                           </Link>

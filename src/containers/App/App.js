@@ -2,6 +2,7 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import WebFont from 'webfontloader'
+import 'semantic-ui-css/semantic.min.css'
 import '../../css/app.css'
 // import {
 //   BrowserRouter,
@@ -9,7 +10,8 @@ import '../../css/app.css'
 //   Switch
 // } from 'react-router-dom'
 import Header from '../../components/Header'
-// import HomePage from '../../components/HomePage'
+// import '../../css/main.sass'
+// import SearchPage from '../../components/SearchPage'
 // import CarRentals from '../../components/CarRentals'
 // import About from '../../components/About'
 // import Help from '../../components/Help'
@@ -21,7 +23,7 @@ import Header from '../../components/Header'
 //
 WebFont.load({
   google: {
-    families: ['Droid Sans', 'Indie Flower', 'Josefin Sans', 'Vidaloka', 'Lato', 'Josefin Sans']
+    families: ['Droid Sans', 'Indie Flower', 'Josefin Sans', 'Vidaloka', 'Lato', 'Josefin Sans', 'Montserrat', 'Roboto' ]
   }
 });
 //
@@ -53,7 +55,7 @@ WebFont.load({
 // export default App;
 
 // import React from "react";
-// import '../../css/app.css'
+
 // app component
 export default class App extends React.Component {
   // render

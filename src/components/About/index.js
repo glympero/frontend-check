@@ -26,7 +26,7 @@ export default class About extends Component {
                 <div className="clearfix" />
                 <h2 className="section-heading">About Us</h2>
                 <p className="par-unstyled-about text-center">
-                  In Simplybook, we are developers, car rental clients and most importantly people who want to support local medium and small companies. Starting from the Greek market, our aim is to provide local car rentals the internet exposure they deserve while providing reliable and low cost service to car renters clients.
+                  In Simplybook, we are developers, car rental clients and most importantly people who want to support local medium and small companies. Starting from the Greek market, our aim is to provide local car rentals the internet exposure they deserve while providing reliable and low cost service to car rental clients.
                 </p>
               </div>
             </div>

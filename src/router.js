@@ -7,7 +7,7 @@ import HomePage from "./components/HomePage";
 import CarRentals from './components/CarRentals'
 import Help from './components/Help'
 import About from './components/About'
-import SearchHome from './containers/HomePage'
+import SearchHome from './containers/SearchPage'
 import NotFound from "./components/Other/not-found.js";
 
 const ScrollToTop = () => {
@@ -27,7 +27,7 @@ const router = (
                     <Route exact path='/car-rentals' component={CarRentals}/>
                     <Route exact path='/about' component={About}/>
                     <Route exact path='/help' component={Help}/>
-                    <Route exact path='/search' component={SearchHome}/>
+                    <Route exact path='/car-search' component={SearchHome}/>
                     <Route component={NotFound} />
                   </Switch>
                 </div>

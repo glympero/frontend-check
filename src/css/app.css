@@ -2,17 +2,12 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css');
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
-
-html {
-	&.wf-active {
-		font-family: 'Lato';
-		.logo {
-			font-family: 'Indie Flower', cursive;
-			font-size: 1.6rem;
-		}
-	}
-	&.wf-inactive {
-	}
+.wf-active {
+	font-family: 'Lato', cursive;
+}
+.logo {
+	font-family: 'Indie Flower', cursive;
+	font-size: 1.6rem;
 }
 .noscroll {
 	overflow:hidden;
@@ -50,19 +45,18 @@ main {
 	margin: -23px auto -10px;
 	width: 100%;
 	text-align: center;
-
-	span {
-		display: inline-block;
-    background-color: white;
-    padding-left: 10px;
-    padding-right: 10px;
-	}
-
-	hr {
-		margin-top: -8px;
-	}
 }
 
+.separator span {
+	display: inline-block;
+	background-color: white;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.separator hr {
+	margin-top: -8px;
+}
 .single-separator {
 	position: relative;
 	width: 100%;
@@ -90,16 +84,14 @@ a.selected {
 
 .navbar {
 	background-color: #f8f8f8;
-  border-color: #e7e7e7;
 	margin-bottom: 0px;
 	border-color: #004D40;
-	.headerItem {
-		&.logo  {
-			flex-grow: 2;
-			margin-left: 0rem;
-		}
-	}
 }
+.navbar .headerItem .logo {
+	flex-grow: 2;
+	margin-left: 0rem;
+}
+
 
 .navbar-brand {
   padding: 0px;
@@ -673,3 +665,6 @@ p.copyright {
 	width: 25%;
 	margin: 0 auto;
 }
+
+
+
