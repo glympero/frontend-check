@@ -1,9 +1,10 @@
 // @flow
 import React from 'react'
-import 'bootstrap/dist/css/bootstrap.min.css'
 import WebFont from 'webfontloader'
-import 'semantic-ui-css/semantic.min.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
 import '../../css/app.css'
+import 'semantic-ui-css/semantic.min.css'
+import '../../css/car-search.css'
 // import {
 //   BrowserRouter,
 //   Route,

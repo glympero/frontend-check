@@ -20,7 +20,7 @@ function MainSearch(props) {
         <div className= 'containerFormSearch'>
           <MainSlider />
           <div className='ui container containerForm'>
-            <FormSearch title="Welcome!" />
+            <FormSearch/>
           </div>
         </div>
       </div>

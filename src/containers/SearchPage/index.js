@@ -11,6 +11,7 @@ import MainSearch from '../../components/MainSearch'
 export default class HomePage extends Component {
 
   render() {
+
     return (
         <div>
           <Helmet
