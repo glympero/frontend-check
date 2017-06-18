@@ -252,6 +252,10 @@ border-bottom: 1px solid #70a0ec !important;
     padding-bottom: 0 !important;
 }
 
+.slick-slider {
+    height:540px;
+}
+
 .checkboxForm {
 left: 32px;
 bottom: 13px;
@@ -794,7 +798,7 @@ left: 0;
 }
 
 .slider #inputSearchDisplay {
-padding-top: 50px;
+padding-top: 45px;
 position: relative;
 }
 

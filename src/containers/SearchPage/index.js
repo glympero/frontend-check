@@ -14,12 +14,6 @@ export default class HomePage extends Component {
 
     return (
         <div>
-          <Helmet
-            title="Simplybook - Search"
-            meta={[
-              { name: 'description', content: 'Description of HomePage' },
-            ]}
-          />
           <MainSearch />
         </div>
     )
