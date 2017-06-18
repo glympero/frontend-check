@@ -47,7 +47,6 @@ function homePageReducer(state = initialState, action)
     case SAVE_DATE:
       return state.setIn(['values', action.data[1]], action.data[0])
     case SAVE_LOCATION:
-      console.log(action);
       return state.setIn(['values', action.location[1]], action.location[0])
     case RESET_STATE:
       console.log(action);

@@ -34,7 +34,10 @@ if (process.env.NODE_ENV !== 'production' && window.devToolsExtension) {
 }
 
 // create the store
-const store = createStore(reducers, middleware);
+const store = createStore(
+  reducers,
+  middleware
+);
 const history = syncHistoryWithStore(createBrowserHistory(), store);
 sagaMiddleware.run(sagas);
 sagaMiddleware.run(getCars);

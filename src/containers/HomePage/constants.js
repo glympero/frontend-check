@@ -12,3 +12,5 @@ export const LOAD_COMMENTS_SUCCESS = 'src/HomePage/LOAD_COMMENTS_SUCCESS';
 export const SAVE_LOCATION = 'src/HomePage/SAVE_LOCATION';
 export const SAVE_DATE = 'src/HomePage/SAVE_DATE';
 export const RESET_STATE = 'src/HomePage/RESET_STATE';
+
+

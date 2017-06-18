@@ -15,7 +15,7 @@ class HomePage extends Component {
 
     return (
         <div>
-          <MainSearch dataUI={this.props.HomePage} resetState={this.props.resetState}  saveDate={this.props.saveDate} loadingTrue={this.props.loadingTrue}  saveLocation={this.props.saveLocation} />
+          <MainSearch dataUI={this.props.HomePage} resetState={this.props.resetState} loading={false} saveDate={this.props.saveDate} loadingTrue={this.props.loadingTrue}  saveLocation={this.props.saveLocation}/>
         </div>
     )
   }
@@ -25,9 +25,10 @@ HomePage.propTypes = {
   dispatch: PropTypes.func.isRequired,
 };
 
-const mapStateToProps = createStructuredSelector({
-  HomePage: makeSelectHomePage(),
-});
+function mapStateToProps(initialState) {
+  return initialState;
+
+}
 
 function mapDispatchToProps(dispatch) {
   return {

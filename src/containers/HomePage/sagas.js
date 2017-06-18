@@ -7,11 +7,14 @@ import { loadCars, carsLoaded, commentsSucces, loadingFalse, resetState } from '
 import { browserHistory } from 'react-router'
 
 import request from '../../utils/request'
-import { makeSelectCars } from './selectors'
+//import { makeSelectCars } from './selectors'
 
+const getCart = state => state.values
 
 export function* getAPI(){
-  const cars = yield select(makeSelectCars())
+  const cars = {
+    pickUPLocation: ''
+  };
 
   const requestURL = `https://simplybook.herokuapp.com/fe/search`
   //const requestURL = `https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20weather.forecast%20where%20woeid%20in%20(select%20woeid%20from%20geo.places(1)%20where%20text%3D"${location}")&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys`;
@@ -23,7 +26,7 @@ export function* getAPI(){
   var spanReturnDate = document.getElementById('spanreturnDate')
   var spanReturnTime = document.getElementById('spanreturnTime')
 
-  if (cars.pickUPLocation==''){
+  if (cars.pickUPLocation === '' || cars.pickUPLocation === undefined){
     yield put(loadingFalse())
     spanPickUpLocation.classList.remove("out")
     spanPickUpLocation.classList.add("validation")
@@ -31,7 +34,7 @@ export function* getAPI(){
     spanPickUpLocation.classList.add("out")
     spanPickUpLocation.classList.remove("validation")
   }
-  if (cars.pickUpDate==''){
+  if (cars.pickUpDate ===''){
     yield put(loadingFalse())
     spanPickUpDate.classList.remove("out")
     spanPickUpDate.classList.add("validation")
@@ -39,7 +42,7 @@ export function* getAPI(){
     spanPickUpDate.classList.add("out")
     spanPickUpDate.classList.remove("validation")
   }
-  if (cars.pickupTime==''){
+  if (cars.pickupTime ===''){
     yield put(loadingFalse())
     spandPickUpTime.classList.remove("out")
     spandPickUpTime.classList.add("validationTime")
@@ -47,7 +50,7 @@ export function* getAPI(){
     spandPickUpTime.classList.add("out")
     spandPickUpTime.classList.remove("validationTime")
   }
-  if (cars.returnDate==''){
+  if (cars.returnDate ===''){
     yield put(loadingFalse())
     spanReturnDate.classList.remove("out")
     spanReturnDate.classList.add("validation")
@@ -56,7 +59,7 @@ export function* getAPI(){
     spanReturnDate.classList.remove("validation")
   }
 
-  if (cars.returnTime==''){
+  if (cars.returnTime ===''){
     yield put(loadingFalse())
     spanReturnTime.classList.remove("out")
     spanReturnTime.classList.add("validationTime")

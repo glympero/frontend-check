@@ -16,23 +16,22 @@ const ScrollToTop = () => {
 };
 // build the router
 const router = (
-
-          <main>
-            <BrowserRouter history={history}>
-                <div className='main' id="header">
-                  <Route component={ScrollToTop} />
-                  <Route component={App} />
-                  <Switch>
-                    <Route exact path='/' component={HomePage} />
-                    <Route exact path='/car-rentals' component={CarRentals}/>
-                    <Route exact path='/about' component={About}/>
-                    <Route exact path='/help' component={Help}/>
-                    <Route exact path='/car-search' component={SearchHome}/>
-                    <Route component={NotFound} />
-                  </Switch>
-                </div>
-            </BrowserRouter>
-          </main>
+  <main>
+    <BrowserRouter history={history}>
+        <div className='main' id="header">
+          <Route component={ScrollToTop} />
+          <Route component={App} />
+          <Switch>
+            <Route exact path='/' component={HomePage} />
+            <Route exact path='/car-rentals' component={CarRentals}/>
+            <Route exact path='/about' component={About}/>
+            <Route exact path='/help' component={Help}/>
+            <Route exact path='/car-search' component={SearchHome}/>
+            <Route component={NotFound} />
+          </Switch>
+        </div>
+    </BrowserRouter>
+  </main>
 
 );
 
