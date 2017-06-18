@@ -12,7 +12,7 @@ import WebFont from 'webfontloader'
 // } from 'react-router-dom'
 import Header from '../../components/Header'
 // import '../../css/main.sass'
-// import SearchPage from '../../components/SearchPage'
+// import HomePage from '../../components/HomePage'
 // import CarRentals from '../../components/CarRentals'
 // import About from '../../components/About'
 // import Help from '../../components/Help'
@@ -64,6 +64,7 @@ export default class App extends React.Component {
     return (
          <div>
            <Header />
+           {React.Children.toArray(this.props.children)}
          </div>
     );
   }

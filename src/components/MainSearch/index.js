@@ -16,7 +16,7 @@ function MainSearch(props) {
         <div className= 'containerFormSearch'>
           <MainSlider />
           <div className='ui container containerForm'>
-            <FormSearch/>
+            <FormSearch dataUI={props.dataUI} loading={props.loading} resetState={props.resetState} loadingTrue={props.loadingTrue}  saveDate={props.saveDate} saveLocation={props.saveLocation}/>
           </div>
         </div>
       </div>

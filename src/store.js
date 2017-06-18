@@ -8,6 +8,7 @@ import createSagaMiddleware from "redux-saga";
 import freeze from "redux-freeze";
 import { reducers } from "./reducers";
 import { sagas } from "./sagas";
+import { getCars } from "./containers/HomePage/sagas"
 
 // add the middlewares
 let middlewares = [];
@@ -36,6 +37,7 @@ if (process.env.NODE_ENV !== 'production' && window.devToolsExtension) {
 const store = createStore(reducers, middleware);
 const history = syncHistoryWithStore(createBrowserHistory(), store);
 sagaMiddleware.run(sagas);
+sagaMiddleware.run(getCars);
 
 // export
 export { store, history };

@@ -7,7 +7,7 @@ import HomePage from "./components/HomePage";
 import CarRentals from './components/CarRentals'
 import Help from './components/Help'
 import About from './components/About'
-import SearchHome from './containers/SearchPage'
+import SearchHome from './containers/HomePage'
 import NotFound from "./components/Other/not-found.js";
 
 const ScrollToTop = () => {

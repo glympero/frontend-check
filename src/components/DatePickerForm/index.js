@@ -14,7 +14,7 @@ import Select from 'react-select';
 class DatePickerForm extends React.Component { // eslint-disable-line react/prefer-stateless-function
 
   constructor(props){
-    super(props)
+    super(props);
       this.state = {
         startDate: moment(),
         endDate:moment().add(2, "days"),
@@ -54,10 +54,10 @@ class DatePickerForm extends React.Component { // eslint-disable-line react/pref
         ],
 
       }
-      this.handleChange = this.handleChange.bind(this)
-      this.handleChangeReturn = this.handleChangeReturn.bind(this)
-      this.onChangeStartHour = this.onChangeStartHour.bind(this)
-      this.onChangeEndHour = this.onChangeEndHour.bind(this)
+      this.handleChange = this.handleChange.bind(this);
+      this.handleChangeReturn = this.handleChangeReturn.bind(this);
+      this.onChangeStartHour = this.onChangeStartHour.bind(this);
+      this.onChangeEndHour = this.onChangeEndHour.bind(this);
   }
   componentWillUpdate(nextProps){
     return{
@@ -99,7 +99,7 @@ class DatePickerForm extends React.Component { // eslint-disable-line react/pref
         <div className='divWhen'>
           <div className='columnPaddingzero columnDatePicker'>
             <div className='selectFormSearchWhen'>
-              <span className="input-group-addon-standar"><i className="fa fa-calendar"></i></span>
+              <span className="input-group-addon-standar"><i className="fa fa-calendar" /></span>
               <DatePicker
                 dateFormat="DD/MM/YYYY"
                 selected={this.state.startDate}
@@ -127,7 +127,7 @@ class DatePickerForm extends React.Component { // eslint-disable-line react/pref
         <div className='divWhen'>
           <div className='columnPaddingzero'>
             <div className='selectFormSearchWhen'>
-              <span className="input-group-addon-standar"><i className="fa fa-calendar"></i></span>
+              <span className="input-group-addon-standar"><i className="fa fa-calendar" /></span>
               <DatePicker
                 dateFormat="DD/MM/YYYY"
                 placeholderText='Selection..'
